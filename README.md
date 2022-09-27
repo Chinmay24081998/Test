@@ -1,3 +1,3 @@
 # Test
 Tandemloop test
-java
+JAVA
