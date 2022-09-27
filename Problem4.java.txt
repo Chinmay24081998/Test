@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Problem4 {
+
+	public static void main(String[] args) 
+	{
+		int n;
+		int count;
+		
+		HashMap<Integer,Integer>map=new HashMap<>();
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the size of an array");
+		n=scan.nextInt();
+		
+		int[]Myelements=new int[n];
+		System.out.println("Enter the size elements");
+		for(int i=0; i<n; i++)
+		{
+			Myelements[i]=scan.nextInt();
+		}
+		for(int j=1; j<10; j++)
+		{
+			count=0;
+			for(int i=0; i<n; i++)
+			{
+				if(Myelements[i] % j==0)
+				{
+					count++;
+				}
+			}
+			map.put(j,count);
+		}
+		System.out.println(map);
+	}
+
+}
